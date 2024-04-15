@@ -21,7 +21,6 @@ def index():
     themes = cur.fetchall()
     cur.close()
     conn.close()
-    #я саша
     return render_template('index.html', themes=themes)
 
 
