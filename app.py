@@ -1,12 +1,13 @@
 from flask import Flask, render_template, send_from_directory, request
 import os
 import psycopg2
+from init_db import init_dba
 
 
 app = Flask(__name__)
-
+init_dba()
 def get_db_connection():
-    conn = psycopg2.connect(host='localhost',
+    conn = psycopg2.connect(host='192.168.98.133',
                             database='postgres',
                             user="postgres",
                             password="admin")
