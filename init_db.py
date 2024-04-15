@@ -3,7 +3,7 @@ import psycopg2
 
 def init_dba():
     conn = psycopg2.connect(
-            host="192.168.98.133",
+            host="database",
             database="postgres",
             user="postgres",
             password="admin")
