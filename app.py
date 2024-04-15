@@ -26,6 +26,7 @@ def index():
 @app.route('/auth', methods=['post', 'get'])
 def auth():
     message =''
+    #я саша
     if request.method == 'POST':
         login = request.form.get('login')
         password = request.form.get('password')   
